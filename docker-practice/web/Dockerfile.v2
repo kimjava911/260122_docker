@@ -1,0 +1,8 @@
+# 1. 기반 이미지 설정
+FROM nginx:alpine
+
+# 2. 로컬 파일을 이미지 내부로 복사
+COPY index2.html /usr/share/nginx/html/index.html
+
+# 3. 컨테이너가 사용할 포트 표시 (문서용)
+EXPOSE 80
